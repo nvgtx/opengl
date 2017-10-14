@@ -1,2 +1,2 @@
-# util
-Utility code
+# OpenGL
+OpenGL stuff
