@@ -32,7 +32,7 @@ all: build.elf
 	@echo "...completing $^"
 
 clean:
-	@ echo ".cleaning"
+	@echo ".cleaning"
 	@rm -f $(call find, '*.o')
 	@rm -f $(call find, '*~')
 	@rm -f *.elf
