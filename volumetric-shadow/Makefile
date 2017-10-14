@@ -1,4 +1,4 @@
-LIBS:=-lc -lGL -lGLEW -lglut -lGLU
+LIBS:=-lc -lGL -lGLEW -lglut -lGLU -lglfw
 
 CC:=g++
 CCFLAGS:=-c -Wall

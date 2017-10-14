@@ -7,11 +7,13 @@
 #include "World.h"
 #include "Light.h"
 #include "Shadow.h"
+#include "Info.h"
 
 World* world;
 Light* light;
 Shadow* shadow;
 Object* object;
+Info* info;
 
 int winIDglut=0;
 int windowWidth=1024;
@@ -218,6 +220,7 @@ int main(int argc, char* argv[])
 	light=new Light();
 	shadow=new Shadow();
 	object=new Object();
+	info=new Info();
 
 	glutInit(&argc, argv);
 	glutInitWindowPosition(0, 0);
@@ -233,6 +236,7 @@ int main(int argc, char* argv[])
 		/* Problem: glewInit failed, something is seriously wrong. */
 		fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
 	}
+	info->infoOpenGl();
 
 	glutReshapeFunc(resize);
 	glutDisplayFunc(render);
