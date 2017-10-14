@@ -26,7 +26,7 @@ OBJECTS:=$(SOURCESCPP:.cpp=.o)
 
 %.elf: $(OBJECTS)
 	@echo "..linking $@"
-	@$(LD) $^ -o $@ $(LDFLAGS)
+	@$(LD) $^ -o $@ $(LDFLAGS) -Wl,-Map,$*.map
 
 all: build.elf
 	@echo "...completing $^"
