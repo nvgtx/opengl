@@ -16,7 +16,6 @@ OBJECTS:=$(SOURCESCPP:.cpp=.o)
 .SECONDARY:
 #keep additional files
 .PRECIOUS: *.map
-
 #keyword targets
 .PHONY: all clean
 
